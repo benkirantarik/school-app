@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300;500;700&display=swap');
+
+.color-1 {
+    color: #1dc742;
+}
+
+.bg-color-1 {
+    background-color: #1dc742;
+}
+
+body {
+    font-family: Signika;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 68px;
+}
+
+#mobile-btn {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+    padding: 1em;
+    cursor: pointer;
+}
+
+#header-mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: fit-content;
+    background: #ffffffa1;
+}
+
+#header-mobile li {
+    display: flex;
+    width: 100%;
+}
+
+#header-mobile li a {
+    width: 100%;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: .5em;
+}
+
+#logo {
+    float: left;
+}
+
+nav {
+    float: right;
+    background: #ffffffbd;
+}
+
+nav li {
+    display: inline-flex;
+}
+
+a:hover {
+    background: #1dc742;
+}
+
+.container {
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+        padding: 1em;
+        font-weight: bold;
+        display: block;
+    }
+}
+
+#home {
+    background: url('../img/home.jpg') center center no-repeat;
+    background-size: 100% 100%;
+}
+
+#home h1 {
+    font-size: 3.5em;
+}
+
+#home .overlayer {
+    background: linear-gradient(180deg, #ffffffd1, #1dc742);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home a {
+    display: block;
+    background: #1dc742;
+    width: fit-content;
+    margin: auto;
+    border-radius: 0 0 1em 1em;
+    color: white;
+    letter-spacing: 3px;
+}
+
+.levels {}
+
+.level,
+.subject,
+.teacher {
+    display: inline-flex;
+    padding: 1em;
+    margin: 2%;
+    align-items: center;
+    flex-wrap: wrap;
+    min-width: calc(100% /3 - 5%);
+    box-shadow: 0 0 3px #2ac94b;
+    flex-direction: column;
+}
+
+.about,
+.contact {
+    width: 70%;
+    margin: auto;
+    background: #f7f7f7;
+    font-weight: 400;
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    background: black;
+    padding: 1em;
+    color: white;
+}
+
+
+@media screen and (max-width:850px) {
+    header {
+        display: none;
+    }
+
+    .hidden {
+        display: block;
+    }
+
+    .left {
+        transform: translateX(-200%);
+    }
+
+    .em {
+        font-size: 14px;
+    }
+
+}
